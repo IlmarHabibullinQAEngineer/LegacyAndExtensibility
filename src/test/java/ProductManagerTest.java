@@ -35,7 +35,7 @@ class ProductManagerTest {
         Assertions.assertArrayEquals(expected, actual);
     }
 
-    //Поиск товара по нескольким критериям
+    //Поиск одного товара
     @Test
     public void searchByTwoProduct() {
         ProductRepository repo = new ProductRepository();
@@ -65,6 +65,7 @@ class ProductManagerTest {
         Assertions.assertArrayEquals(expected, actual);
     }
 
+    //Поиск товара несуществующего товара
     @Test
     public void searchByNullProduct() {
         ProductRepository repo = new ProductRepository();
